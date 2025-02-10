@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Защита паролем</title>
+    <script>
+        function checkPassword() {
+            const correctPassword = "0000"; // Установи свой пароль здесь
+            const userPassword = prompt("Enter password:");
+
+            if (userPassword === correctPassword) {
+                alert("Correct!");
+                window.location.href = "https://lightluminous.github.io/Power-n-Love/Fallen%20Angel"; // Перенаправление на защищённую страницу
+            } else {
+                alert("Incorrect!");
+            }
+        }
+    </script>
+</head>
+<body onload="checkPassword()">
+    <h2>You have been blocked by the website administrator.</h2>
+</body>
+</html>
